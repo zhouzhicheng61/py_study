@@ -8,4 +8,4 @@ data = open('F:\Program Files (x86)\python_study/test.txt', 'a+')
 print('test', file=data)
 data.close()
 
-print('233333', '哈哈哈哈哈', 'more')
+print('45', '哈哈哈哈哈', 'more')
