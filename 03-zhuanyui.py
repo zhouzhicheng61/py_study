@@ -1,3 +1,5 @@
+# -*-coding:utf-8-*-
+
 str = 'hi'
 print('第一个是' + str)
 str = 'c:\qweqw'
