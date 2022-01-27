@@ -1,6 +1,9 @@
 # -*-coding:utf-8-*-
 # 第一种分支
 from random import randint
+from tracemalloc import start
+
+from sympy import Range
 
 if 3 < 5:
     print('第一种符合条件')
@@ -84,3 +87,28 @@ while d < 5:
 else:
     print('循环内', d)
 print('循环外', d)
+
+# 99乘法表
+l = 1  #控制行数
+while l <= 9:
+    r = 1  #控制列数
+    while r <= l:
+        print(r, '*', l, '=', l * r, end='  ')  #不换行 接着打 每个输出后面加空格
+        r += 1
+    print()  #打印个换行
+    l += 1
+
+#for循环
+for aa in 'abdce':
+    print(aa)
+
+#等价于while循环
+aaa = 0
+while aaa < len('abdce'):
+    print('abdce'[aaa])
+    aaa += 1
+
+#for求和
+# range(stop) 从0开始到stop之前的整数序列
+# range(start,stop)
+# range(start,stop,step)
