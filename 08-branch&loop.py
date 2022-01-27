@@ -1,4 +1,4 @@
-# -*-coding:utf-8-*-
+
 # 第一种分支
 from random import randint
 from tracemalloc import start
