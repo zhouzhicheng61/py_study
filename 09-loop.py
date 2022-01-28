@@ -38,6 +38,8 @@ while hang <= 9:
     print()
     hang += 1
 
+#找10以内的素数-while方法
+
 #循环2 for
 for each in 'zhouzhicheng61':
     print(each)
@@ -52,3 +54,5 @@ for y in range(11):
 # range(stop)   从0开始到stop前一个整数结束间隔为1
 # range(start,stop)     从start开始到stop前一个整数结束间隔为1
 # range(start,stop,step)    从start开始到stop前一个整数结束间隔为step
+
+#找10以内的素数-for方法
