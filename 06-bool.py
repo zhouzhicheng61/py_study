@@ -1,4 +1,3 @@
-# -*-coding:utf-8-*-
 # 布尔类型
 #
 # 定义FALSE的对象：None;False;

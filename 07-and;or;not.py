@@ -1,4 +1,3 @@
-# -*-coding:utf-8-*-
 # and：且；or：或；not：非
 # 短路逻辑和运算符优先级
 print(3 and 4)

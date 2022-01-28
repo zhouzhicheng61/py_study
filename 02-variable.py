@@ -1,4 +1,3 @@
-# -*-coding:utf-8-*-
 teacher = '小甲鱼'
 print(teacher)
 teacher = '老甲鱼'

@@ -1,7 +1,5 @@
-
 # 第一种分支
 from random import randint
-from tracemalloc import start
 
 from sympy import Range
 

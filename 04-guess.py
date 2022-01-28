@@ -1,8 +1,6 @@
-# -*-coding:utf-8-*-
-
 from random import randint
 
-daan = randint(1, 100)
+daan = randint(1, 10)
 temp = int(input('请输入你猜的数字'))
 while temp != daan:
     if temp > daan:
