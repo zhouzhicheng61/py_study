@@ -39,6 +39,17 @@ while hang <= 9:
     hang += 1
 
 #找10以内的素数-while方法
+sushu = 2
+while sushu <= 10:
+    bianli = 2
+    while bianli < sushu:
+        if sushu % bianli == 0:
+            print(sushu, '被整除了')
+            break
+        bianli += 1
+    else:
+        print(sushu, '是质数')
+    sushu += 1
 
 #循环2 for
 for each in 'zhouzhicheng61':
@@ -56,3 +67,10 @@ for y in range(11):
 # range(start,stop,step)    从start开始到stop前一个整数结束间隔为step
 
 #找10以内的素数-for方法
+for sushu in range(2, 11):
+    for bianli in range(2, sushu):
+        if sushu % bianli == 0:
+            print(sushu, '我被整除了')
+            break
+    else:
+        print(sushu, '我是质数')
