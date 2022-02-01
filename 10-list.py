@@ -71,3 +71,7 @@ nums_index_of_3 = nums.index(3)  #index只能返回第一个元素的索引值
 print(nums_index_of_3)
 nums_index_of_3_second = nums.index(3, nums.index(3) + 1, len(nums))
 print(nums_index_of_3_second, len(nums))
+
+#列表.拷贝
+nums_copy = nums.copy()
+print(nums_copy)
