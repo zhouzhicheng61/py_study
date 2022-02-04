@@ -48,3 +48,14 @@ print(a6)
 
 #replace:纯纯的替换，可选替换几个，默认为全部替换
 print('在吗，在吗，我想你了'.replace('在吗', '想你', 1))
+
+#translate配合maketrans使用，相当于给字符串调用translate方法转换，其中参数为maketrans对应的代替方法
+a7 = str.maketrans('ABCDEFG', '1234567')
+print('I love FishC'.translate(a7))
+
+#测试字符是否为起始内容，可以指定起始和结束位置
+a8 = '他爱Python'
+print(a8.startswith('我', 1))
+print(a8.endswith('Python', 2))
+if a8.startswith(('你', '我', '他')):
+    print('有人喜欢')
