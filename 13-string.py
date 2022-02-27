@@ -53,9 +53,43 @@ print('在吗，在吗，我想你了'.replace('在吗', '想你', 1))
 a7 = str.maketrans('ABCDEFG', '1234567', 'love')
 print('I love FishC'.translate(a7))
 
-#测试字符是否为起始内容，可以指定起始和结束位置
+# 判断
+# 测试字符是否为起始内容，可以指定起始和结束位置，参数可以以元组的方式传入，进行多个匹配
 a8 = '他爱Python'
 print(a8.startswith('我', 1))
 print(a8.endswith('Python', 2))
 if a8.startswith(('你', '我', '他')):
     print('有人喜欢')
+
+# 所有单词开头是否都是大写开头，其他均为小写
+a9 = 'I love Python'
+print(a9.istitle())  #因为l没有大写
+
+#是否所有都是大写
+print(a9.isupper())
+print(a9.upper().isupper())  #从左往右先执行upper全都变成大写，再进行判断是否全部为大写
+
+#是否所有都是小写
+print(a9.islower())
+
+#是否只由字母构成
+print(a9.isalpha())  #空格不算字母
+
+#是否为空白字符串：空格，tab，转义符啥的 都是
+print(' '.isspace(), '    '.isspace(), '\n'.isspace())
+
+#是否所有字符都是可以打印的，转义字符打不出来的
+print('\r'.isprintable())
+
+#判断是否是数字：.isdecimal();.isdigit();.isnumeric()，每个都有各自所适的范围
+#集大成者：.isalnum()，只要.isalpha();.isdecimal();.isdigit();.isnumeric();其中有一个为True，那么.isalnum()就为True
+
+#检测是合法的python标识符
+print('i am a haha'.isidentifier())
+print('i_am_a_haha'.isidentifier())
+
+#检测是否为python的保留标识符
+import keyword
+
+print(keyword.iskeyword('if'))
+print(keyword.iskeyword('zzc'))
