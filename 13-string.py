@@ -49,8 +49,8 @@ print(a6)
 #replace:纯纯的替换，可选替换几个，默认为全部替换
 print('在吗，在吗，我想你了'.replace('在吗', '想你', 1))
 
-#translate配合maketrans使用，相当于给字符串调用translate方法转换，其中参数为maketrans对应的代替方法
-a7 = str.maketrans('ABCDEFG', '1234567')
+#translate配合maketrans使用，相当于给字符串调用translate方法转换，其中参数为maketrans对应的代替方法，第三个参数为要忽略的内容
+a7 = str.maketrans('ABCDEFG', '1234567', 'love')
 print('I love FishC'.translate(a7))
 
 #测试字符是否为起始内容，可以指定起始和结束位置
