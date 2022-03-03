@@ -1,3 +1,4 @@
+import string
 import openpyxl
 
 # 获取Excel文件的整体工作簿
@@ -36,3 +37,28 @@ print(openpyxl.utils.cell.get_column_letter(496))
 
 # 二十六进制转十进制
 print(openpyxl.utils.cell.column_index_from_string('JB'))
+
+# 遍历单元格内容（切片范围）
+for each_hang in gongzuobiao1['E1':'F20']:
+    for each_lie in each_hang:
+        print(each_lie.value, end='     ')
+    print()
+
+for hang in range(1, 21):
+    for lie in ['E', 'F']:
+        cell_name = lie + str(hang)
+        print(gongzuobiao1[cell_name].value, end='    ')
+    print()
+
+# 获取第任意列
+for hang in gongzuobiao1.rows:
+    print(hang[0].value)
+
+# 指定起始和终止位置()
+for hang in gongzuobiao1.iter_rows(min_row=3, min_col=2, max_row=7,
+                                   max_col=10):
+    print(hang[0].value)
+
+# 拷贝工作表
+gongzuobiao3 = gongzuobu1.copy_worksheet(gongzuobiao1)
+gongzuobu1.save("python_test\初始数据\线上销售-商品\多点线上业绩_202203021040.xlsx")
