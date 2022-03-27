@@ -118,3 +118,27 @@ print("www.baidu.com".rpartition("."))
 # 左切分
 print("苟日新，日日新，又日新".split("，"))
 print("苟日新，日日新，又日新".rsplit("，", 1))
+
+# 按行分割 默认Flase 不包含换行符 True包含
+print("苟日新\n日日新\r又日\r\n新".splitlines(True))
+
+# 拼接
+print(".".join(["www", "baidu", "com"]))
+
+s = "fishc"
+print("".join([s, s]))
+
+# 格式化字符串
+year = 2022
+print("今年是{}年".format(year))
+print("1+2={},2的平方是{},3的立方是{}".format(1 + 2, 2**2, 3**3))
+print("{}看到{}就很激动！".format("小甲鱼", "小姐姐"))
+# 可以在花括号 用索引选择内容
+print("{1}看到{0}就很激动！".format("小甲鱼", "小姐姐"))
+# 关键字
+print("我叫{name}，我爱{fav}".format(fav="Python", name="zzc"))
+# 输出花括号
+print("{},{},{}".format(1, {}, 2))
+print("{},{{}},{}".format(1, 2))
+
+# 字符串格式化语法 太复杂了
