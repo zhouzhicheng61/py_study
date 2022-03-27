@@ -93,3 +93,28 @@ import keyword
 
 print(keyword.iskeyword('if'))
 print(keyword.iskeyword('zzc'))
+
+# 截取字符串
+# 左侧不留白
+print("         hahahahahha".lstrip())
+# 右侧不留白
+print("hasdhfasdf           ".rstrip())
+# 两侧不留白
+print("     adsifoa sdfohuawef ".strip())
+# 在上述方法中传入参数，每个字符为一个个体，无论从哪边开始识别，直到为非匹配内容为止
+print("www.masdfac.com".lstrip("wcom."))
+# # 消除前缀(3.9+版本)
+# print("www.baidu.com".removeprefix("www."))
+# # 消除后缀(3.9+版本)
+# print("www.baidu.com".removesuffix(".com"))
+
+# 拆分和拼接
+# 从左到右：左侧 分隔符 右侧
+print("www.baidu.com".partition("."))
+# 从右到左：右侧 分隔符 左侧
+print("www.baidu.com".rpartition("."))
+
+# 切分 #参数一:分隔符（默认切分空格） 参数二：分割次数（默认是-1，有就切分；1就切一次）
+# 左切分
+print("苟日新，日日新，又日新".split("，"))
+print("苟日新，日日新，又日新".rsplit("，", 1))
